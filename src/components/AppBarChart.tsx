@@ -13,11 +13,11 @@ import { Bar, BarChart, CartesianGrid, XAxis, YAxis } from "recharts";
 const chartConfig = {
   profit: {
     label: "Profit",
-    color: "var(--chart-1)",
+    color: "var(--chart-8)",
   },
   loss: {
     label: "Loss",
-    color: "var(--chart-3)",
+    color: "var(--chart-9)",
   },
 } satisfies ChartConfig;
 
