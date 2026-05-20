@@ -9,6 +9,12 @@ import {
   Plus,
   Projector,
   ChevronDown,
+  Eye,
+  ListChecks,
+  Newspaper,
+  FlagTriangleRight,
+  ArrowDownUp,
+  CircleDollarSign,
 } from "lucide-react";
 import {
   Sidebar,
@@ -99,7 +105,7 @@ const AppSideBar = () => {
                     <span>{item.title}</span>
                   </SidebarMenuButton>
                   {item.title === "Inbox" && (
-                    <SidebarMenuBadge>25</SidebarMenuBadge>
+                    <SidebarMenuBadge>11</SidebarMenuBadge>
                   )}
                 </SidebarMenuItem>
               ))}
@@ -128,7 +134,7 @@ const AppSideBar = () => {
               <SidebarMenuItem>
                 <SidebarMenuButton asChild>
                   <Link href="#">
-                    <Projector />
+                    <Eye />
                     See All Projects
                   </Link>
                 </SidebarMenuButton>
@@ -150,7 +156,7 @@ const AppSideBar = () => {
           <SidebarGroup>
             <SidebarGroupLabel asChild>
               <CollapsibleTrigger>
-                Collapsible Group
+                Workspace
                 <ChevronDown className="ml-auto transition-transform group-data-[state=open]/collapsible:rotate-180" />
               </CollapsibleTrigger>
             </SidebarGroupLabel>
@@ -160,16 +166,16 @@ const AppSideBar = () => {
                   <SidebarMenuItem>
                     <SidebarMenuButton asChild>
                       <Link href="#">
-                        <Projector />
-                        See All Projects
+                        <Newspaper />
+                        Activity Feed
                       </Link>
                     </SidebarMenuButton>
                   </SidebarMenuItem>
                   <SidebarMenuItem>
                     <SidebarMenuButton asChild>
                       <Link href="#">
-                        <Plus />
-                        Add Projects
+                        <ListChecks />
+                        Recent Tasks
                       </Link>
                     </SidebarMenuButton>
                   </SidebarMenuItem>
@@ -180,30 +186,30 @@ const AppSideBar = () => {
         </Collapsible>
         {/* NESTED */}
         <SidebarGroup>
-          <SidebarGroupLabel>Nested Items</SidebarGroupLabel>
+          <SidebarGroupLabel>Analytics</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
               <SidebarMenuItem>
                 <SidebarMenuButton asChild>
                   <Link href="#">
-                    <Projector />
-                    See All Projects
+                    <FlagTriangleRight />
+                    Reports
                   </Link>
                 </SidebarMenuButton>
                 <SidebarMenuSub>
                   <SidebarMenuSubItem>
                     <SidebarMenuSubButton asChild>
                       <Link href="/">
-                        <Plus />
-                        Add Projects
+                        <CircleDollarSign />
+                        Sales
                       </Link>
                     </SidebarMenuSubButton>
                   </SidebarMenuSubItem>
                   <SidebarMenuSubItem>
                     <SidebarMenuSubButton asChild>
                       <Link href="/">
-                        <Plus />
-                        Add Category
+                        <ArrowDownUp />
+                        Traffic
                       </Link>
                     </SidebarMenuSubButton>
                   </SidebarMenuSubItem>

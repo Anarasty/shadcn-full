@@ -52,8 +52,8 @@ const Navbar = () => {
         <DropdownMenu>
           <DropdownMenuTrigger>
             <Avatar>
-              <AvatarImage src="https://github.com/shadcn.png" />{" "}
-              <AvatarFallback>CN</AvatarFallback>{" "}
+              <AvatarImage src="https://i.pravatar.cc/300" />
+              <AvatarFallback>AV</AvatarFallback>
             </Avatar>
           </DropdownMenuTrigger>
           <DropdownMenuContent sideOffset={10}>
