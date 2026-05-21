@@ -18,6 +18,11 @@
   --color-sidebar-primary: var(--sidebar-primary);
   --color-sidebar-foreground: var(--sidebar-foreground);
   --color-sidebar: var(--sidebar);
+  --color-chart-14: var(--chart-14);
+  --color-chart-13: var(--chart-13);
+  --color-chart-12: var(--chart-12);
+  --color-chart-11: var(--chart-11);
+  --color-chart-10: var(--chart-10);
   --color-chart-9: var(--chart-9);
   --color-chart-8: var(--chart-8);
   --color-chart-7: var(--chart-7);
@@ -80,6 +85,11 @@
   --chart-7: oklch(0.64 0.24 25);
   --chart-8: oklch(0.87 0.15 155);
   --chart-9: oklch(0.71 0.20 307);
+  --chart-10: oklch(0.77 0.16 60);
+  --chart-11: oklch(0.73 0.20 146);
+  --chart-12: oklch(0.62 0.21 259);
+  --chart-13: oklch(0.90 0.18 98);
+  --chart-14: oklch(0.72 0.20 350);
   --radius: 0.625rem;
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
