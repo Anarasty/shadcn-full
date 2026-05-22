@@ -97,7 +97,7 @@ const AppSideBar = () => {
         <SidebarGroup>
           <SidebarGroupLabel>App Menu</SidebarGroupLabel>
           <SidebarGroupContent>
-            <SidebarMenu>
+            {/* <SidebarMenu>
               {items.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton href={item.url}>
@@ -107,6 +107,18 @@ const AppSideBar = () => {
                   {item.title === "Inbox" && (
                     <SidebarMenuBadge>11</SidebarMenuBadge>
                   )}
+                </SidebarMenuItem>
+              ))}
+            </SidebarMenu> */}
+            <SidebarMenu>
+              {items.map((item) => (
+                <SidebarMenuItem key={item.title}>
+                  <SidebarMenuButton asChild>
+                    <Link href={item.url}>
+                      <item.icon />
+                      <span>{item.title}</span>
+                    </Link>
+                  </SidebarMenuButton>
                 </SidebarMenuItem>
               ))}
             </SidebarMenu>
